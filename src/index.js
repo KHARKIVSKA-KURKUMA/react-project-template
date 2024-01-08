@@ -1,11 +1,14 @@
-import { App } from 'components/App/App';
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import 'modern-normalize/modern-normalize.css';
-import 'react-toastify/dist/ReactToastify.css';
+import { App } from "components/App/App";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "modern-normalize/modern-normalize.css";
+import "react-toastify/dist/ReactToastify.css";
+import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename="/react-project-template">
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
